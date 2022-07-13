@@ -8,9 +8,16 @@
   --gray-500: #8d8d99;
   --gray-600: #c4c4cc;
   --gray-700: #e1e1e6;
+  --gray-800: #29292e;
   --white: #ffffff;
   --red: #f75a68;
 }
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green);
+}
+
 
 * {
   margin: 0;
