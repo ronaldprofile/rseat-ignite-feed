@@ -96,8 +96,13 @@
   transition: background 0.2s;
 }
 
-.commentForm button[type="submit"]:hover {
+.commentForm button[type="submit"]:not(:disabled):hover {
   background: var(--green-light);
+}
+
+.commentForm button[type="submit"]:disabled {
+  cursor: not-allowed;
+  filter: brightness(0.6);
 }
 
 .commentList {

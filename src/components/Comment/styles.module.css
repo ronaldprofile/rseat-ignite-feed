@@ -4,6 +4,10 @@
   gap: 1rem;
 }
 
+.comment + .comment {
+  margin-top: 1.5rem;
+}
+
 .comment > img {
   width: 3rem;
   height: 3rem;
