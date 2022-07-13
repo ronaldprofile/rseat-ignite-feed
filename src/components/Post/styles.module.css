@@ -1,113 +1,113 @@
 .post {
-    padding: 2.5rem;
-    background-color: var(--gray-200);
-    border-radius: 8px;
+  padding: 2.5rem;
+  background-color: var(--gray-200);
+  border-radius: 8px;
 }
 
 .post + .post {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .post > header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post > header time {
-    font-size: .875rem;
-    color: var(--gray-500)
+  font-size: 0.875rem;
+  color: var(--gray-500);
 }
 
 .author {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .avatar {
-    width: calc(3rem + 12px);
-    height: calc(3rem + 12px);
-    border-radius: 5px;
-    border: 4px solid var(--gray-200);
-    outline: 2px solid var(--green);
+  width: calc(3rem + 12px);
+  height: calc(3rem + 12px);
+  border-radius: 5px;
+  border: 4px solid var(--gray-200);
+  outline: 2px solid var(--green);
 }
 
 .authorInfo {
-    display: flex;
-    flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
 .authorInfo strong {
-    line-height: 1.6;
+  line-height: 1.6;
 }
-  
+
 .authorInfo span {
-    font-size: 0.875rem;
-    color: var(--gray-500);
-    line-height: 1.6;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.6;
 }
 
 .content {
-    margin-top: 1.5rem;
-    color: var(--gray-600);
-    line-height: 1.6;
+  margin-top: 1.5rem;
+  color: var(--gray-600);
+  line-height: 1.6;
 }
 
 .content p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .content a {
-    font-weight: 700;
-    color: var(--green-light)
+  font-weight: 700;
+  color: var(--green-light);
 }
 
 .commentForm {
-    width: 100%;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--gray-300)
+  width: 100%;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-300);
 }
 
 .commentForm strong {
-    line-height: 1.6;
-    color: var(--gray-700)
+  line-height: 1.6;
+  color: var(--gray-700);
 }
 
 .commentForm textarea {
-    margin-top: 1rem;
-    padding: 1rem;
-    width: 100%;
-    height: 6rem;
-    background-color: var(--gray);
-    color: var(--gray-700);
-    border: 0;
-    border-radius: 5px;
-    resize: none;
-    line-height: 1.4;
-    transition: all .2s;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--gray);
+  color: var(--gray-700);
+  border: 0;
+  border-radius: 5px;
+  resize: none;
+  line-height: 1.4;
+  transition: all 0.2s;
 }
 
 .commentForm textarea:focus {
-    outline: 1px solid var(--green);
+  outline: 1px solid var(--green);
 }
 
 .commentForm button[type="submit"] {
-    padding: 1rem 1.5rem;
-    margin-top: 1rem;
-    background: var(--green);
-    color: var(--white);
-    font-weight: 700;
-    border-radius: 5px;
-    border: 0;
-    transition: background .2s;
-} 
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  background: var(--green);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 5px;
+  border: 0;
+  transition: background 0.2s;
+}
 
 .commentForm button[type="submit"]:hover {
-    background: var(--green-light);
+  background: var(--green-light);
 }
 
 .commentList {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }

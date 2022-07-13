@@ -5,18 +5,18 @@ import { Post } from "./components/Post";
 import styles from "./styles/App.module.css";
 
 export function App() {
-  return (
-    <>
-      <Header />
+    return (
+        <>
+            <Header />
 
-      <div className={styles.wrapper}>
-        <Sidebar />
-        
-        <main>
-          <Post author="Ronald Tomaz" content="I am developer web"/>
-          <Post author="Ronald Tomaz" content="I am developer web"/>
-        </main>
-      </div>
-    </>
-  );
+            <div className={styles.wrapper}>
+                <Sidebar />
+
+                <main>
+                    <Post author="Ronald Tomaz" content="I am developer web" />
+                    <Post author="Ronald Tomaz" content="I am developer web" />
+                </main>
+            </div>
+        </>
+    );
 }

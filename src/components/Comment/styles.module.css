@@ -1,93 +1,90 @@
 .comment {
-    display: flex;
-    align-items:flex-start;
-    gap: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .comment > img {
-    width: 3rem ;
-    height: 3rem;
-    border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
 }
 
 .commentBox {
-    flex: 1;
+  flex: 1;
 }
 
 .commentContent {
-    padding: 1rem;
-    background-color: var(--gray-800);
-    border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--gray-800);
+  border-radius: 5px;
 }
 
 .commentContent header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-
-
-
 .commentContent header button {
-    background: transparent;
-    border: 0;
-    color: var(--gray-500);
-    line-height: 0;
-    transition: .2s;
+  background: transparent;
+  border: 0;
+  color: var(--gray-500);
+  line-height: 0;
+  transition: 0.2s;
 }
 
 .commentContent header button:hover {
-    color: var(--red)
+  color: var(--red);
 }
 
 .commentContent p {
-    margin-top: 1rem;
-    font-size: .875rem;
-    color: var(--gray-600)
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--gray-600);
 }
 
 .authorAndTime {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .authorAndTime strong {
-    line-height: 1.6;
-    font-size: .875rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
 }
 
 .authorAndTime time {
-    font-size: .75rem;
-    color: var(--gray-500);
-    line-height: 1.6;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  line-height: 1.6;
 }
 
 .commentBox footer {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    color: var(--gray-500);
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--gray-500);
 }
 
 .commentBox footer button {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border: 0;
-    line-height: 0;  
-    transition: .2s;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  line-height: 0;
+  transition: 0.2s;
 }
 
 .commentBox footer button:hover {
-    color: var(--green-light)
+  color: var(--green-light);
 }
 
 .commentBox footer button svg {
-    margin-right: .75rem;
+  margin-right: 0.75rem;
 }
 
 .commentBox footer span::before {
-    content: '\2022';
-    padding: 0 0.25rem;
+  content: "\2022";
+  padding: 0 0.25rem;
 }
