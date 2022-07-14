@@ -2,7 +2,7 @@
   align='center'
   style="display: flex; align-items: center; gap: .875rem justify-content:center;">
 
-  <img src="./src/assets/logo.svg" />
+  <img src="./src/assets/logo.svg" style="width: 50px;"/>
   Ignite Feed
 </h1>
 
