@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { Avatar } from "../Avatar";
 import { Comment } from "../Comment";
 import { format, formatDistanceToNow } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
 import styles from "./styles.module.css";
 
-export function Post({ author, content, publishedAt }) {
-  const [comments, setComments] = useState([]);
+interface Author {
+  name: string;
+  role: string;
+  avatarUrl: string;
+}
+
+interface Content {
+  type: 'paragraph' | 'link';
+  content: string;
+}
+
+interface PostProps {
+  author: Author;
+  content: Content[];
+  publishedAt: Date;
+}
+
+
+export function Post({ author, content, publishedAt }: PostProps) {
+  const [comments, setComments] = useState<string[]>([]);
   const [newComment, setNewComment] = useState("");
 
   const publishedDateFormatted = format(
@@ -22,10 +40,10 @@ export function Post({ author, content, publishedAt }) {
     addSuffix: true
   });
 
-  function handleSubmitComment(event) {
+  function handleSubmitComment(event: FormEvent) {
     event.preventDefault();
 
-    if (!newComment.trim("")) {
+    if (!newComment.trim()) {
       alert("Preencha o campo");
       return;
     }
@@ -35,7 +53,7 @@ export function Post({ author, content, publishedAt }) {
     setNewComment("");
   }
 
-  function deleteComment(commentToDelete) {
+  function deleteComment(commentToDelete: string) {
     const commentsWithoutDeleteOne = comments.filter(comment => {
       return comment !== commentToDelete;
     });
