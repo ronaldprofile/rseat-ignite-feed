@@ -8,27 +8,17 @@ const posts = [
   {
     id: 1,
     author: {
-      avatarUrl: "https://github.com/maykbrito.png",
-      name: "Mayk Brito",
-      role: "Instructor at @Rocketseat"
+      avatarUrl: 'https://github.com/filipedeschamps.png',
+      name: 'Filipe Deschamps',
+      role: 'Developer'
     },
-
     content: [
-      { type: "paragraph", content: "Fala galeraa 👋" },
-      {
-        type: "paragraph",
-        content:
-          " Acabei de subir mais um projeto no meu portifa. É um projeto que fiz"
-      },
-      {
-        type: "paragraph",
-        content:
-          "no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀"
-      }
+      { type: 'paragraph', content: 'Fala galera 👋' },
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu github. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é Ignite Feed 🚀' },
+      { type: 'link', content: 'ignite-feed/demo' },
     ],
-
-    publishedAt: new Date("2022-07-12 13:20:00")
-  }
+    publishedAt: new Date('2022-07-13 13:00:00'),
+  },
 ];
 
 export function App() {
@@ -40,14 +30,18 @@ export function App() {
         <Sidebar />
 
         <main>
-          {posts.map(post => (
-            <Post
-              key={post.id}
-              author={post.author}
-              content={post.content}
-              publishedAt={post.publishedAt}
-            />
-          ))}
+          {posts.map(post => {
+            console.log(post);
+
+            return (
+              <Post
+                key={post.id}
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </>

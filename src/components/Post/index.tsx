@@ -12,7 +12,7 @@ interface Author {
 }
 
 interface Content {
-  type: 'paragraph' | 'link';
+  type: string;
   content: string;
 }
 
@@ -21,7 +21,6 @@ interface PostProps {
   content: Content[];
   publishedAt: Date;
 }
-
 
 export function Post({ author, content, publishedAt }: PostProps) {
   const [comments, setComments] = useState<string[]>([]);
@@ -84,13 +83,13 @@ export function Post({ author, content, publishedAt }: PostProps) {
       </header>
 
       <div className={styles.content}>
-        {content.map(paragraph => {
-          if (paragraph.type === "paragraph") {
-            return <p key={paragraph.content}>{paragraph.content}</p>;
-          } else if (paragraph.type === "link") {
+        {content.map(line => {
+          if (line.type === "paragraph") {
+            return <p key={line.content}>{line.content}</p>;
+          } else if (line.type === "link") {
             return (
-              <p key={paragraph.content}>
-                <a href="#">{paragraph.content}</a>
+              <p key={line.content}>
+                <a href="#">{line.content}</a>
               </p>
             );
           }
